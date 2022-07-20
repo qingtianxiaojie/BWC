@@ -37,6 +37,7 @@ public class LoginCheckFilter implements Filter {
         //定义不需要处理的请求路径
         String[] urls = new String[]{
                 //书写功能阶段，停止拦截器，暂时让请求发出
+                "/**",
                 "/admin/**",
                 "/common/**",
                 "/config/**",
